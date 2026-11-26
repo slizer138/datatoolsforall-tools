@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slizer138/bulk-domain-availability-checker",
+  "title": "Bulk Domain Availability Checker (via Apify)",
+  "description": "Bulk domain availability via registry RDAP: available or taken, registrar, expiry. $1 per 1,000.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/datatoolsforall/bulk-domain-availability-checker",
+  "repository": {
+    "url": "https://github.com/slizer138/datatoolsforall-tools",
+    "source": "github",
+    "subfolder": "servers/bulk-domain-availability-checker"
+  },
+  "icons": [
+    {
+      "src": "https://slizer138.github.io/datatoolsforall-tools/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=datatoolsforall/bulk-domain-availability-checker",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer <your Apify token>' if your client cannot do OAuth. Runs bill per event to your Apify account.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

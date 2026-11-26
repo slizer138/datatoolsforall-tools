@@ -1,0 +1,20 @@
+{
+  "name": "datatoolsforall",
+  "interface": {
+    "displayName": "Data Tools for All"
+  },
+  "plugins": [
+    {
+      "name": "datatoolsforall",
+      "source": {
+        "source": "local",
+        "path": "./plugins/datatoolsforall"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

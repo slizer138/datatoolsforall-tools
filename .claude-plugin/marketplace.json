@@ -1,0 +1,29 @@
+{
+  "name": "datatoolsforall",
+  "description": "Pay-per-use data tools for AI agents: bulk domain availability (RDAP), bulk Lighthouse audits with lab Core Web Vitals, sitemap URL extraction, and US business entity search in NY, TX, CO, OR and CT state open data. Runs on your own Apify account.",
+  "owner": {
+    "name": "Data Tools for All",
+    "email": "datatoolsforall@gmail.com",
+    "url": "https://github.com/slizer138/datatoolsforall-tools"
+  },
+  "plugins": [
+    {
+      "name": "datatoolsforall",
+      "source": "./plugins/datatoolsforall",
+      "description": "Check many domain names for availability, run Lighthouse audits on URL lists or whole sitemaps, list every URL in a site's sitemaps, and search LLCs and corporations in NY, TX, CO, OR and CT state open data. Pay-per-use Apify Actors billed to your own Apify account.",
+      "category": "data",
+      "tags": [
+        "domain-availability",
+        "rdap",
+        "lighthouse",
+        "pagespeed",
+        "core-web-vitals",
+        "sitemap",
+        "seo",
+        "business-registry",
+        "kyb",
+        "apify"
+      ]
+    }
+  ]
+}

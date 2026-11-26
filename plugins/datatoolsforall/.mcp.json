@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dtfa": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=datatoolsforall/bulk-domain-availability-checker,datatoolsforall/bulk-lighthouse-pagespeed-audit,datatoolsforall/state-business-entity-search,datatoolsforall/website-sitemap-extractor"
+    }
+  }
+}

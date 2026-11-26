@@ -1,0 +1,24 @@
+# Data Tools for All
+
+> Pay-per-use data tools for AI agents and people, run as Apify Actors on the caller's own Apify account: bulk domain availability (registry RDAP), bulk Lighthouse audits with lab Core Web Vitals metrics, sitemap URL extraction, and US business entity search in New York, Texas, Colorado, Oregon and Connecticut state open data. The author builds these Actors and earns from paid runs.
+
+Connect any MCP client to https://mcp.apify.com/?tools=datatoolsforall/bulk-domain-availability-checker,datatoolsforall/bulk-lighthouse-pagespeed-audit,datatoolsforall/state-business-entity-search,datatoolsforall/website-sitemap-extractor (Streamable HTTP; Apify OAuth sign-in in the browser, no token needed). Claude Code: `claude plugin marketplace add slizer138/datatoolsforall-tools` then `claude plugin install datatoolsforall@datatoolsforall`. Skills for any agent: `npx skills add slizer138/datatoolsforall-tools`. Always set the result cap input and confirm runs estimated above about USD 1 with the user.
+
+## Tools
+
+- [Bulk Domain Availability Checker](https://apify.com/datatoolsforall/bulk-domain-availability-checker.md): `datatoolsforall/bulk-domain-availability-checker`. Inputs `domains` (up to 5,000) or `keywords` x `tlds` (+ `prefixes`, `suffixes`), cap `maxDomains`. USD 0.001 per domain answered available or registered; unknown, unsupported_tld and invalid rows free.
+- [Bulk Lighthouse & PageSpeed Audit](https://apify.com/datatoolsforall/bulk-lighthouse-pagespeed-audit.md): `datatoolsforall/bulk-lighthouse-pagespeed-audit`. Inputs `urls` and/or `sitemapUrl` + `maxUrls`, `strategies` (mobile, desktop), `budgets`. USD 0.02 per URL per device, USD 0.003 with the user's own PageSpeed Insights key; error rows free. Lab metrics, not field data.
+- [US State Business Entity Search](https://apify.com/datatoolsforall/state-business-entity-search.md): `datatoolsforall/state-business-entity-search`. Inputs `states` (NY, CO, CT, OR, TX), `searchNames` or `entityIds` or `formedAfter`, cap `maxResultsPerState`. USD 0.0015 per record. Texas data is the TX Comptroller franchise-tax permit holder list; NY and OR list active entities only.
+- [Sitemap URL Extractor](https://apify.com/datatoolsforall/website-sitemap-extractor.md): `datatoolsforall/website-sitemap-extractor`. Inputs `startUrls`, cap `maxUrlsPerSite`, `lastmodAfter`, `includePatterns`, `compareWithPreviousRun`, `checkUrlStatus`. USD 0.0002 per URL, plus USD 0.0005 per URL status check.
+
+## Agent files
+
+- [Skills](https://github.com/slizer138/datatoolsforall-tools/tree/main/plugins/datatoolsforall/skills): one SKILL.md per tool with when to use, when not to use, exact input and output fields, cost guards and error handling
+- [README](https://github.com/slizer138/datatoolsforall-tools#readme): setup for Claude Code, Claude.ai, Codex, Cursor, VS Code, LangChain, CrewAI and the Apify API
+- [MCP Registry entries](https://github.com/slizer138/datatoolsforall-tools/tree/main/servers): io.github.slizer138/bulk-domain-availability-checker, io.github.slizer138/lighthouse-pagespeed-audit, io.github.slizer138/sitemap-url-extractor, io.github.slizer138/secretary-of-state-business-search
+
+## Optional
+
+- [Tutorial: Audit every page of a sitemap with Lighthouse for about $1](https://slizer138.github.io/datatoolsforall-tools/sitemap-lighthouse-audit)
+- [Privacy](https://slizer138.github.io/datatoolsforall-tools/privacy)
+- [Terms](https://slizer138.github.io/datatoolsforall-tools/terms)

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slizer138/sitemap-url-extractor",
+  "title": "Sitemap URL Extractor (via Apify)",
+  "description": "Every URL from a site's sitemap.xml with lastmod, plus new/removed page diffs. $0.20 per 1,000 URLs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/datatoolsforall/website-sitemap-extractor",
+  "repository": {
+    "url": "https://github.com/slizer138/datatoolsforall-tools",
+    "source": "github",
+    "subfolder": "servers/sitemap-url-extractor"
+  },
+  "icons": [
+    {
+      "src": "https://slizer138.github.io/datatoolsforall-tools/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=datatoolsforall/website-sitemap-extractor",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer <your Apify token>' if your client cannot do OAuth. Runs bill per event to your Apify account.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

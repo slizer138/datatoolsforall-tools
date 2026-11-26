@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slizer138/lighthouse-pagespeed-audit",
+  "title": "Bulk Lighthouse & PageSpeed Audit (via Apify)",
+  "description": "Bulk Lighthouse audits of URL lists or sitemaps, mobile & desktop, no Google API key. $0.02/audit.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/datatoolsforall/bulk-lighthouse-pagespeed-audit",
+  "repository": {
+    "url": "https://github.com/slizer138/datatoolsforall-tools",
+    "source": "github",
+    "subfolder": "servers/lighthouse-pagespeed-audit"
+  },
+  "icons": [
+    {
+      "src": "https://slizer138.github.io/datatoolsforall-tools/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=datatoolsforall/bulk-lighthouse-pagespeed-audit",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer <your Apify token>' if your client cannot do OAuth. Runs bill per event to your Apify account.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

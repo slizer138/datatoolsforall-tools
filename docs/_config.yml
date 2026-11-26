@@ -1,0 +1,11 @@
+title: Data Tools for All
+description: Pay-per-use data tools for AI agents and people - domain availability, Lighthouse audits, US business registry search and sitemap URLs.
+url: https://slizer138.github.io
+baseurl: /datatoolsforall-tools
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+include:
+  - llms.txt
+exclude:
+  - README.md

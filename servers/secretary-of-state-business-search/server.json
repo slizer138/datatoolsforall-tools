@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slizer138/secretary-of-state-business-search",
+  "title": "US State Business Entity Search: NY, TX, CO, OR, CT (via Apify)",
+  "description": "LLC/corporation search and new filings from NY, TX, CO, OR, CT state open data. $1.50 per 1,000.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/datatoolsforall/state-business-entity-search",
+  "repository": {
+    "url": "https://github.com/slizer138/datatoolsforall-tools",
+    "source": "github",
+    "subfolder": "servers/secretary-of-state-business-search"
+  },
+  "icons": [
+    {
+      "src": "https://slizer138.github.io/datatoolsforall-tools/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=datatoolsforall/state-business-entity-search",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional 'Bearer <your Apify token>' if your client cannot do OAuth. Runs bill per event to your Apify account.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

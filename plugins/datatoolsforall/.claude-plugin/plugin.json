@@ -1,0 +1,31 @@
+{
+  "name": "datatoolsforall",
+  "displayName": "Data Tools for All",
+  "version": "1.0.0",
+  "description": "Check many domain names for availability (registry RDAP), run Lighthouse audits on URL lists or whole sitemaps (lab metrics), list every URL in a site's sitemaps, and search LLCs and corporations in New York, Texas, Colorado, Oregon and Connecticut state open data. Pay-per-use Apify Actors billed to your own Apify account.",
+  "author": {
+    "name": "Data Tools for All",
+    "email": "datatoolsforall@gmail.com",
+    "url": "https://apify.com/datatoolsforall"
+  },
+  "homepage": "https://slizer138.github.io/datatoolsforall-tools/",
+  "repository": "https://github.com/slizer138/datatoolsforall-tools",
+  "license": "MIT",
+  "keywords": [
+    "domain-availability",
+    "rdap",
+    "lighthouse",
+    "pagespeed",
+    "core-web-vitals",
+    "sitemap",
+    "seo-audit",
+    "business-entity-search",
+    "kyb",
+    "apify"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/slizer138/datatoolsforall-tools#readme",
+  "supportUrl": "https://github.com/slizer138/datatoolsforall-tools/issues",
+  "privacyPolicyUrl": "https://slizer138.github.io/datatoolsforall-tools/privacy",
+  "termsOfServiceUrl": "https://slizer138.github.io/datatoolsforall-tools/terms"
+}
