@@ -16,3 +16,5 @@ node_modules/
 mcp-publisher
 mcp-publisher.exe
 docs/_site/
+
+mcp-publisher.tar.gz
