@@ -30,7 +30,6 @@ Free-looking names are confirmed with the registry's RDAP server. Taken names ar
 
 1. This plugin's MCP server exposes the Actor as its own tool, named `datatoolsforall--bulk-domain-availability-checker` (your client may add a prefix, for example `mcp__plugin_datatoolsforall_dtfa__...` in Claude Code). Loading it also loads `get-actor-run`, `get-dataset-items`, `get-key-value-store-record` and `abort-actor-run`.
 2. If only the standard Apify MCP server is connected, use `call-actor` with `actor: "datatoolsforall/bulk-domain-availability-checker"`, the same `input`, and `callOptions: { "maxTotalChargeUsd": <cap> }`.
-3. Without MCP: `apify call datatoolsforall/bulk-domain-availability-checker -i '<input JSON>' -s -o` after `apify login`.
 
 The Actor tool waits up to `waitSecs` seconds (default 30, maximum 45) and then returns the run status and a `nextStep`. Small runs usually finish within that wait. For larger runs (hundreds of domains with registration details), call `get-actor-run` with its `runId` and `waitSecs: 45` until the status is SUCCEEDED, FAILED, ABORTED or TIMED-OUT, and never start a second run for the same request. Read rows with `get-dataset-items`.
 

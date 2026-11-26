@@ -33,7 +33,6 @@ Never describe the results as "Core Web Vitals assessment passed/failed": that v
 
 1. This plugin's MCP server exposes the Actor as its own tool, named `datatoolsforall--bulk-lighthouse-pagespeed-audit` (your client may add a prefix, for example `mcp__plugin_datatoolsforall_dtfa__...` in Claude Code). Loading it also loads `get-actor-run`, `get-dataset-items`, `get-key-value-store-record` and `abort-actor-run`.
 2. If only the standard Apify MCP server is connected, use `call-actor` with `actor: "datatoolsforall/bulk-lighthouse-pagespeed-audit"`, the same `input`, and `callOptions: { "maxTotalChargeUsd": <cap> }`.
-3. Without MCP: `apify call datatoolsforall/bulk-lighthouse-pagespeed-audit -i '<input JSON>' -s -o` after `apify login`.
 
 Runs are slow: about 10 seconds for a light page and about 60 seconds for a heavy one in local tests; the platform can be slower. 50 pages can take 10 to 50 minutes. The Actor tool waits up to `waitSecs` seconds (default 30, maximum 45) and then returns the run status and a `nextStep`. Tell the user the run is in progress and how long it may take, then call `get-actor-run` with its `runId` and `waitSecs: 45` until the status is SUCCEEDED, FAILED, ABORTED or TIMED-OUT. Never start a second run for the same request. Read rows with `get-dataset-items` (the `fields` argument keeps large results small).
 

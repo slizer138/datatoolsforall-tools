@@ -42,7 +42,6 @@ Never describe Texas results as Secretary of State data. For the legal standing 
 
 1. This plugin's MCP server exposes the Actor as its own tool, named `datatoolsforall--state-business-entity-search` (your client may add a prefix, for example `mcp__plugin_datatoolsforall_dtfa__...` in Claude Code). Loading it also loads `get-actor-run`, `get-dataset-items`, `get-key-value-store-record` and `abort-actor-run`.
 2. If only the standard Apify MCP server is connected, use `call-actor` with `actor: "datatoolsforall/state-business-entity-search"`, the same `input`, and `callOptions: { "maxTotalChargeUsd": <cap> }`.
-3. Without MCP: `apify call datatoolsforall/state-business-entity-search -i '<input JSON>' -s -o` after `apify login`.
 
 The Actor tool waits up to `waitSecs` seconds (default 30, maximum 45) and then returns the run status and a `nextStep`. Most runs finish within that wait. If not, call `get-actor-run` with its `runId` and `waitSecs: 45` until the status is SUCCEEDED, FAILED, ABORTED or TIMED-OUT, and never start a second run for the same request. Read rows with `get-dataset-items`.
 
